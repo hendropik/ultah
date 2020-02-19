@@ -20,7 +20,7 @@
     <div class="container text-center my-4">
 
       <p class="font-weight-bold">Pengingat Ulang Tahun</p>
-
+      <p id="demo"></p>
       <!-- Table  -->
       <table class="table table bordered table-striped" id="testTable">
         <!-- Table head -->
@@ -76,6 +76,8 @@
 
         }
       });
+      var d = new Date();
+document.getElementById("demo").innerHTML = d.getFullYear();
     </script>
   </body>
 
