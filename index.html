@@ -20,7 +20,7 @@
   <body>
     <div class="container text-center my-4">
 
-      <p class="font-weight-bold">Pengingat Ulang Tahun</p>
+      <p class="font-weight-bold">Pengingat Ulang Tahun brrr</p>
       <p> What Day Is It ? </p> <p id="tudey"></p>
       <!-- Table  -->
       <table id="dtBasicExample" class="table table-bordered table-striped table-sm">
@@ -77,13 +77,12 @@
       
         }
       });
+$(document).ready(function () {
+$('#dtBasicExample').DataTable();
+$('.dataTables_length').addClass('bs-select');
+});
 var d = new Date();
 document.getElementById("tudey").innerHTML = d;
-      
-      $(document).ready(function () {
-  $('#dtBasicExample').DataTable();
-  $('.dataTables_length').addClass('bs-select');
-});
     </script>
   </body>
 
