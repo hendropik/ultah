@@ -62,6 +62,11 @@
 
 
     <script type="text/javascript">
+      $(document).ready(function () {
+  $('#dtBasicExample').DataTable();
+  $('.dataTables_length').addClass('bs-select');
+
+        }
       $.getJSON("https://spreadsheets.google.com/feeds/list/13rsHe_Som4kTAcaz8W85VnaxwVYo_IgvqaXisGZuoD4/od6/public/values?alt=json", function(data) {
 
         var sheetData = data.feed.entry;
@@ -74,11 +79,7 @@
           var email = data.feed.entry[i]['gsx$_cpzh4']['$t'];
 
           document.getElementById('demo').innerHTML += ('<tr>' + '<td>' + name + '</td>' + '<td>' + age + '</td>' + '<td>' + email + '</td>' + '</tr>');
-      $(document).ready(function () {
-  $('#dtBasicExample').DataTable();
-  $('.dataTables_length').addClass('bs-select');
-
-        }
+      
         }
       });
 var d = new Date();
