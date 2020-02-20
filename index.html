@@ -19,7 +19,7 @@
   <body>
     <div class="container text-center my-4">
 
-      <p class="font-weight-bold">Pengingat Ulang Tahun test</p>
+      <p class="font-weight-bold">Pengingat Ulang Tahun</p>
       <p> What Day Is It ? </p> <p id="tudey"></p>
       <!-- Table  -->
       <table class="table table-bordered table-striped" id="testTable">
@@ -34,7 +34,7 @@
         <!-- Table head -->
 
         <!-- Table body -->
-        <tbody class="peach-gradient white-text" id="demo">
+        <tbody id="demo">
 
 
         </tbody>
@@ -72,7 +72,7 @@
           var age = data.feed.entry[i]['gsx$_cokwr']['$t'];
           var email = data.feed.entry[i]['gsx$_cpzh4']['$t'];
 
-          document.getElementById('demo').innerHTML += ('<tr>' + '<td>' + name + '</td>' + '<td>' + age + '</td>' + '<td>' + email + '</td>' + '</tr>');
+          document.getElementById('demo').innerHTML += ('<tr class="peach-gradient white-text">' + '<td>' + name + '</td>' + '<td>' + age + '</td>' + '<td>' + email + '</td>' + '</tr>');
 
         }
       });
