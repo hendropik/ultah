@@ -18,6 +18,12 @@
     <link href="css/addons/datatables.min.css" rel="stylesheet">
     <!-- MDBootstrap Datatables  -->
     <script type="text/javascript" src="js/addons/datatables.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function () {
+  $('#dtBasicExample').DataTable();
+  $('.dataTables_length').addClass('bs-select');
+});
+    </script>
   </head>
 
   <body>
@@ -83,11 +89,6 @@
       
 var d = new Date();
 document.getElementById("tudey").innerHTML = d;
-      
-      $(document).ready(function () {
-  $('#dtBasicExample').DataTable();
-  $('.dataTables_length').addClass('bs-select');
-});
     </script>
   </body>
 
