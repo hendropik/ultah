@@ -19,10 +19,10 @@
   <body>
     <div class="container text-center my-4">
 
-      <p class="font-weight-bold">Pengingat Ulang Tahun</p>
+      <p class="font-weight-bold">Pengingat Ulang Tahun test</p>
       <p> What Day Is It ? </p> <p id="tudey"></p>
       <!-- Table  -->
-      <table class="table table-bordered table-striped" id="testTable">
+      <table class="table table-bordered table-striped" id="dtBasicExample">
         <!-- Table head -->
         <thead class="blue-gradient white-text">
           <tr>
@@ -78,6 +78,11 @@
       });
 var d = new Date();
 document.getElementById("tudey").innerHTML = d;
+      
+      $(document).ready(function () {
+  $('#dtBasicExample').DataTable();
+  $('.dataTables_length').addClass('bs-select');
+});
     </script>
   </body>
 
