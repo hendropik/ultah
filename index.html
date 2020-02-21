@@ -77,7 +77,9 @@
           var email = data.feed.entry[i]['gsx$_cpzh4']['$t'];
           
           $(document).ready(function () {
-$('#dtBasicExample').DataTable();
+$('#dtBasicExample').DataTable({
+"ordering": false // false to disable sorting (or any other option)
+});
 $('.dataTables_length').addClass('bs-select');
 });
           document.getElementById('demo').innerHTML += ('<tr>' + '<td>' + name + '</td>' + '<td>' + age + '</td>' + '<td>' + email + '</td>' + '</tr>');
